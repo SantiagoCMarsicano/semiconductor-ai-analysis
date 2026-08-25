@@ -2,6 +2,20 @@
 
 
 
+An exploratory data analysis of the global semiconductor industry between 2010 and 2025, examining market growth, regional dynamics, selected leading
+
+firms, and the increasing relevance of artificial intelligence.
+
+
+
+The project was developed in \*\*R\*\* and combines data transformation, descriptive analysis, visualization, and an analytical report.
+
+
+
+The full analytical report is written in Spanish and is available in \[`report/semiconductor\_industry\_2010\_2025.pdf`](report/semiconductor\_industry\_2010\_2025.pdf).
+
+
+
 ## Project Overview
 
 
@@ -18,7 +32,9 @@ The final report is written in Spanish and is intended as an academic and portfo
 
 
 
-Objectives
+## Objectives
+
+
 
 The main objectives of this project are:
 
@@ -106,7 +122,7 @@ semiconductor-ai-analysis/
 
 ├── data/
 
-│   └── processed/
+│   └── raw/
 
 │
 
@@ -246,15 +262,13 @@ Asia remained the dominant region in global semiconductor sales throughout the p
 
 The Western bloc increased its relative participation in recent years, suggesting a gradual rebalancing of the industry.
 
-Semiconductor demand is associated with multiple technological markets, including smartphones, video games, cloud computing, data centers, and artificial intelligence.
+The comparison with selected end markets shows different patterns: semiconductor sales display a relatively dispersed relationship with smartphone shipments and a closer visual association with gaming market revenues. 
 
 NVIDIA and TSMC showed particularly strong growth within the group of selected firms.
 
 Market capitalization does not depend only on current revenues, but also reflects expectations about future growth, innovation, and strategic positioning.
 
-Artificial intelligence has become a key factor shaping investor expectations and the valuation of semiconductor companies.
-
-## 
+The exceptionally high valuations of some firms, particularly NVIDIA, are consistent with market expectations surrounding future growth and their positioning in rapidly expanding computing applications, including artificial intelligence.
 
 ## Report
 
