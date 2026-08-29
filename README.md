@@ -1,328 +1,243 @@
-# Semiconductor Industry and Artificial Intelligence
+# Global Semiconductor Industry (2010–2025)
 
+An exploratory data analysis of the global semiconductor industry, developed in **R**, covering market growth, regional dynamics, related technology markets, and the evolution of selected leading firms between 2010 and 2025.
 
+The project combines data cleaning, transformation, descriptive analysis, visualization, validation checks, and a full analytical report.
 
-An exploratory data analysis of the global semiconductor industry between 2010 and 2025, examining market growth, regional dynamics, selected leading
+> **Full report:** [`report/semiconductor_industry_2010_2025.pdf`](report/semiconductor_industry_2010_2025.pdf)  
+> The report is currently available in Spanish.
 
-firms, and the increasing relevance of artificial intelligence.
-
-
-
-The project was developed in \*\*R\*\* and combines data transformation, descriptive analysis, visualization, and an analytical report.
-
-
-
-The full analytical report is written in Spanish and is available in \[`report/semiconductor\_industry\_2010\_2025.pdf`](report/semiconductor\_industry\_2010\_2025.pdf).
-
-
+---
 
 ## Project Overview
 
+The semiconductor industry has become a central component of the global technology economy. This project studies how the sector evolved between 2010 and 2025 through three complementary levels of analysis:
 
+- **Industry level:** global semiconductor sales and major market events.
+- **Regional level:** changes in the relative weight of East and West.
+- **Firm level:** revenue growth, revenue shares, and market capitalization for NVIDIA, AMD, Intel, TSMC, and ASML.
 
-This project analyzes the evolution of the global semiconductor industry between 2010 and 2025, focusing on industry growth, regional dynamics, company performance, and the increasing relevance of artificial intelligence in shaping market expectations and firm valuation.
+The analysis also compares semiconductor market growth with two related technology markets: **smartphone shipments** and **global gaming revenues**.
 
+The project is intentionally **exploratory and descriptive**. It identifies trends, structural changes, and visual associations without making causal claims.
 
+---
 
-The analysis was developed in R and combines descriptive statistics, data visualization, and an analytical report to explore how the semiconductor industry has changed during the last fifteen years.
+## Main Questions
 
+The analysis addresses the following questions:
 
+- How much did global semiconductor sales grow between 2010 and 2025?
+- How did the regional structure of the industry change?
+- How did semiconductor growth compare with smartphones and gaming?
+- Did the selected firms benefit equally from industry expansion?
+- How did the relative economic weight of the selected firms change?
+- How does 2025 market capitalization compare with company revenues?
 
-The final report is written in Spanish and is intended as an academic and portfolio-oriented data analysis project.
-
-
-
-## Objectives
-
-
-
-The main objectives of this project are:
-
-
-
-Analyze the evolution of global semiconductor sales between 2010 and 2025.
-
-Study the regional distribution of the semiconductor industry across East and West.
-
-Compare semiconductor industry trends with related markets such as smartphones and video games.
-
-Analyze the performance of selected leading semiconductor companies.
-
-Explore the relationship between company revenues and market capitalization.
-
-Produce visualizations and an analytical report using R.
-
-Research Questions
-
-This project addresses the following questions:
-
-
-
-How did global semiconductor sales evolve between 2010 and 2025?
-
-Which regions concentrated the largest share of the semiconductor market?
-
-How did the relative position of East and West change over time?
-
-Which companies experienced the strongest revenue growth?
-
-How does market capitalization relate to company revenues?
-
-What role does artificial intelligence play in the recent valuation of semiconductor companies?
-
-Companies Analyzed
-
-The firm-level analysis focuses on five representative companies in the semiconductor industry:
-
-
-
-#### NVIDIA
-
-#### AMD
-
-#### Intel
-
-#### TSMC
-
-#### ASML
-
-
-
-These companies were selected because they occupy strategic positions in different parts of the semiconductor value chain, including chip design, semiconductor manufacturing, and advanced lithography equipment.
-
-
-
-## Tools and Technologies
-
-
-
-### R
-
-tidyverse
-
-ggplot2
-
-dplyr
-
-readr
-
-scales
-
-GitHub
-
-
-
-## Repository Structure
-
-
-
-semiconductor-ai-analysis/
-
-│
-
-├── data/
-
-│   └── raw/
-
-│
-
-├── figures/
-
-│   ├── figure\_01\_global\_semiconductor\_sales.png
-
-│   ├── figure\_02\_regional\_sales\_east\_west.png
-
-│   ├── figure\_03\_regional\_market\_share.png
-
-│   ├── figure\_04\_regional\_growth\_index.png
-
-│   ├── figure\_05\_regional\_comparison\_2010\_2025.png
-
-│   ├── figure\_06\_semiconductors\_smartphones\_gaming\_index.png
-
-│   ├── figure\_07\_scatter\_semiconductors\_related\_markets.png
-
-│   ├── figure\_08\_company\_revenue\_index.png
-
-│   ├── figure\_09\_company\_revenues\_2011\_2025.png
-
-│   ├── figure\_10\_company\_revenue\_share.png
-
-│   ├── figure\_11\_market\_cap\_2025.png
-
-│   └── figure\_12\_market\_cap\_vs\_revenue.png
-
-│
-
-├── references/
-
-│   └──industry\_reports/
-
-│   └──papers/
-
-│
-
-├── report/
-
-│   └── semiconductor\_industry\_2010\_2025.pdf
-
-├── scripts/
-
-│   └── analysis.R
-
-│
-
-├── README.md
-
-└── LICENSE
-
-## Data Sources
-
-
-
-The analysis uses data from public and industry sources related to:
-
-
-
-Global semiconductor sales.
-
-Regional semiconductor sales.
-
-Smartphone shipments.
-
-Video game market revenues.
-
-Company revenues.
-
-Market capitalization of selected semiconductor firms.
-
-
-
-### Main references and data sources include:
-
-
-
-World Semiconductor Trade Statistics.
-
-Semiconductor Industry Association.
-
-OECD.
-
-Company financial reports.
-
-Market data sources for smartphones, video games, company revenues, and market capitalization.
-
-
-
-Specific sources are indicated inside the visualizations and in the final analytical report.
-
-
-
-## Visualizations
-
-
-
-The project includes twelve main figures:
-
-
-
-Global semiconductor sales and major industry events, 2010–2025.
-
-Regional semiconductor sales by East and West, 2010–2025.
-
-Market share of East and West in global semiconductor sales, 2010–2025.
-
-Regional growth index of semiconductor sales, base 2010 = 100.
-
-Regional market share comparison, 2010 and 2025.
-
-Comparative indices of semiconductors, smartphones, and video games, base 2012 = 100.
-
-Relationship between semiconductor sales, smartphones, and video games.
-
-Revenue index of selected semiconductor firms, base 2011 = 100.
-
-Revenues of selected semiconductor firms, 2011 and 2025.
-
-Relative revenue share of selected firms, 2011–2025.
-
-Market capitalization of selected semiconductor firms, 2025.
-
-Relationship between market capitalization and revenues, 2025.
-
-
+---
 
 ## Key Findings
 
+- Global semiconductor sales increased from approximately **USD 298 billion in 2010** to **USD 796 billion in 2025**.
+- East Asia remained the dominant macro-region throughout the period, although its share declined from approximately **69% to 61%**, while the Western share increased.
+- Semiconductor sales grew substantially faster than global smartphone shipments over the common comparison period.
+- The five selected firms followed very different trajectories. **NVIDIA and TSMC gained substantial relative weight**, while **Intel's share of combined selected-company revenue declined sharply**.
+- By 2025, market capitalization differed considerably from current revenue scale, particularly for NVIDIA, illustrating the importance of market expectations, technological positioning, and anticipated future growth.
 
+These results should be interpreted as descriptive evidence rather than causal estimates.
 
-The global semiconductor industry experienced strong growth between 2010 and 2025.
+---
 
-Asia remained the dominant region in global semiconductor sales throughout the period.
+## Selected Visualizations
 
-The Western bloc increased its relative participation in recent years, suggesting a gradual rebalancing of the industry.
+### Global semiconductor sales
 
-The comparison with selected end markets shows different patterns: semiconductor sales display a relatively dispersed relationship with smartphone shipments and a closer visual association with gaming market revenues. 
+![Global semiconductor sales](figures/EN/figure_01_global_semiconductor_sales_EN.png)
 
-NVIDIA and TSMC showed particularly strong growth within the group of selected firms.
+### Revenue share transformation among selected firms
 
-Market capitalization does not depend only on current revenues, but also reflects expectations about future growth, innovation, and strategic positioning.
+![Company revenue share](figures/EN/figure_10_company_revenue_share_EN.png)
 
-The exceptionally high valuations of some firms, particularly NVIDIA, are consistent with market expectations surrounding future growth and their positioning in rapidly expanding computing applications, including artificial intelligence.
+### Market capitalization vs. revenue
 
-## Report
+![Market capitalization vs revenue](figures/EN/figure_12_market_cap_vs_revenue_EN.png)
 
+The repository contains **12 figures in English and 12 in Spanish**.
 
+---
 
-The full analytical report is available in the report/ folder.
+## Companies Analyzed
 
-The report is written in Spanish and presents the complete discussion, visualizations, and conclusions of the project.
+The firm-level analysis focuses on five strategically relevant companies occupying different positions in the semiconductor value chain:
 
+| Company | Country / Region | Main role |
+|---|---|---|
+| NVIDIA | United States | Chip design |
+| AMD | United States | Chip design |
+| Intel | United States | Design and manufacturing |
+| TSMC | Taiwan | Semiconductor manufacturing |
+| ASML | Netherlands | Lithography equipment |
 
+The sample is selective and is not intended to represent the entire semiconductor industry.
+
+---
+
+## Data Sources
+
+The project combines public, industry, and company-level data.
+
+Main sources include:
+
+- **World Semiconductor Trade Statistics (WSTS)** — global and regional semiconductor sales.
+- **International Data Corporation (IDC)** — smartphone market data.
+- **Newzoo** — global gaming market revenues.
+- **Company annual reports and financial statements** — company revenue data.
+- **CompaniesMarketCap** — 2025 market capitalization.
+- **OECD, NBER, academic papers, and industry reports** — contextual and supporting literature.
+
+Raw datasets used by the R workflow are stored in [`data/raw/`](data/raw/). Supporting literature and industry reports are available in [`references/`](references/).
+
+---
+
+## Methodology
+
+The workflow includes:
+
+1. Importing and cleaning raw Excel and CSV files.
+2. Standardizing units and variable formats.
+3. Aggregating WSTS regional data into:
+   - **East:** Japan + Asia Pacific
+   - **West:** Americas + Europe
+4. Constructing growth indices with fixed base years.
+5. Comparing semiconductor sales with smartphone and gaming market indicators.
+6. Calculating company revenue growth and relative revenue shares.
+7. Combining 2025 revenue and market-capitalization data.
+8. Generating the 12 analytical visualizations.
+9. Running validation checks for years, regional totals, index bases, revenue shares, and market-cap observations.
+
+---
+
+## Reproducibility
+
+The complete R workflow is available at:
+
+[`R/semiconductor_part_A_analysis.R`](R/semiconductor_part_A_analysis.R)
+
+Run the script from the **repository root**.
+
+### Required R packages
+
+```r
+install.packages(c(
+  "tidyverse",
+  "readxl",
+  "scales",
+  "patchwork",
+  "ggrepel"
+))
+```
+
+Then run:
+
+```r
+source("R/semiconductor_part_A_analysis.R")
+```
+
+The script reads the raw files from:
+
+```text
+data/raw/
+```
+
+and regenerates the English figures in:
+
+```text
+figures/EN_reconstructed/
+```
+
+The workflow also performs validation checks at the end of execution.
+
+---
+
+## Repository Structure
+
+```text
+semiconductor-ai-analysis/
+├── R/
+│   └── semiconductor_part_A_reconstructed.R
+│
+├── data/
+│   └── raw/
+│       ├── Historical_Billings_Report.xlsx
+│       ├── company_market_cap_2025.csv
+│       ├── data_raw_global_semiconductor_firms_revenue_2011_2025.xlsx
+│       ├── global_gaming_market_revenue_2012_2025.xlsx
+│       └── global_smartphone_shipments_2012_2025.xlsx
+│
+├── figures/
+│   ├── EN/
+│   └── ES/
+│
+├── references/
+│   ├── industry_reports/
+│   └── papers/
+│
+├── report/
+│   └── semiconductor_industry_2010_2025.pdf
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+---
+
+## Figures
+
+The project contains the following 12 analytical figures:
+
+1. Global semiconductor sales, 2010–2025.
+2. Regional semiconductor sales: East vs. West.
+3. Regional semiconductor market share.
+4. Regional semiconductor sales growth index.
+5. Regional market-share comparison: 2010 vs. 2025.
+6. Semiconductor, smartphone, and gaming growth indices.
+7. Semiconductor sales vs. related technology markets.
+8. Revenue growth index for selected firms.
+9. Company revenues: 2011 vs. 2025.
+10. Revenue-share transformation among selected firms.
+11. Market capitalization of selected firms in 2025.
+12. Market capitalization vs. revenue in 2025.
+
+---
 
 ## Limitations
 
+This project has several important limitations:
 
+- The analysis is descriptive and does not establish causality.
+- The company analysis is based on five selected firms rather than the full industry.
+- Data originate from different sources and may use different reporting conventions.
+- The East/West aggregation is an analytical simplification designed for regional comparison.
+- Market capitalization reflects investor expectations and should not be interpreted as a direct measure of operating performance.
 
-This project is exploratory and descriptive. The analysis identifies trends and visual associations but does not establish causal relationships between semiconductor industry growth and specific technological or economic factors.
+---
 
-Differences in data sources, reporting periods, and measurement units may also affect comparability across variables.
+## Future Extension
 
-Future Improvements
+A second part of the project is planned to extend the analysis toward **econometric and time-series methods**, with particular attention to trade tensions, technological restrictions, industrial policy, structural breaks, and other major shocks affecting the semiconductor industry.
 
-Possible extensions of this project include:
-
-
-
-## Reconstructing and documenting the full R workflow.
-
-
-
-Adding a reproducible script for all figures.
-
-Including a data dictionary.
-
-Expanding the analysis to include additional companies.
-
-Comparing semiconductor trends with AI investment, cloud infrastructure, or data center demand.
-
-Adding an interactive dashboard.
-
-
+---
 
 ## Author
 
+**Santiago Castillo Marsicano**  
+Economist | Sociologist | Data Analytics
 
+GitHub: [SantiagoCMarsicano](https://github.com/SantiagoCMarsicano)
 
-##### Santiago Castillo Marsicano
+---
 
-##### Economist | Sociologist | Data Analytics
+## License
 
-
-
-## Project Status
-
-
-
-Exploratory data analysis project developed for academic and portfolio purposes.
-
+This project is distributed under the terms specified in the [`LICENSE`](LICENSE) file.

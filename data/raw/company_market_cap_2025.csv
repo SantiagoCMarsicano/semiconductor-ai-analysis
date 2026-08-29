@@ -1,0 +1,6 @@
+company,ticker,year,market_cap_usd_billions,source,source_page,measurement
+NVIDIA,NVDA,2025,4638.0,CompaniesMarketCap,NVIDIA - Market capitalization,End-of-year market cap
+TSMC,TSM,2025,1570.0,CompaniesMarketCap,TSMC - Market capitalization,End-of-year market cap
+ASML,ASML,2025,416.38,CompaniesMarketCap,ASML - Market capitalization,End-of-year market cap
+AMD,AMD,2025,350.01,CompaniesMarketCap,AMD - Market capitalization,End-of-year market cap
+Intel,INTC,2025,172.67,CompaniesMarketCap,Intel - Market capitalization,End-of-year market cap
